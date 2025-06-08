@@ -10,3 +10,4 @@
 3. [SARSA](pages/rl/sarsa.md)
 4. [Value Iteration | 价值迭代](pages/rl/vi.md)
 5. [Policy Iteration | 策略迭代](pages/rl/pi.md)
+6. [Policy Gradient Methods | 策略梯度方法](pages/rl/pgm.md)
