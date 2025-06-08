@@ -6,13 +6,13 @@
 ## SARSA是什么？
 ## What is SARSA?
 
-SARSA是强化学习中一种经典的、基于时序差分（Temporal-Difference, TD）的无模型学习算法。根据您的复习大纲，它与Q-learning和蒙特卡洛方法同属于核心的无模型学习技术。
+SARSA是强化学习中一种经典的、基于时序差分（Temporal-Difference, TD）的无模型学习算法。
 
 SARSA的全称是 **State-Action-Reward-State-Action**，这个名字非常直观地描述了其算法的更新流程。它是一种 **在策略（On-Policy）** 学习算法，这意味着它评估和改进的策略，与它用来与环境交互、产生数据的策略是同一个。
 
-## What is SARSA? (English)
+## What is SARSA?
 
-SARSA is a classic, model-free learning algorithm in reinforcement learning based on Temporal-Difference (TD) methods. According to your study guide, it belongs to the core model-free learning techniques alongside Q-learning and the Monte Carlo method.
+SARSA is a classic, model-free learning algorithm in reinforcement learning based on Temporal-Difference (TD) methods. 
 
 The name SARSA stands for **State-Action-Reward-State-Action**, which intuitively describes the update process of the algorithm. It is an **On-Policy** learning algorithm, which means the policy it evaluates and improves is the same one it uses to interact with the environment and generate data.
 
@@ -37,7 +37,7 @@ SARSA的目标是学习一个动作价值函数 `Q(s, a)`，与Q-learning一样�
 * `γ` (gamma) 是折扣因子，决定了未来奖励的重要性。
 * `[R + γQ(S', A') - Q(S, A)]` 这一部分被称为 **TD误差（TD Error）**。它代表了新的、更准确的价值估算 (`R + γQ(S', A')`) 与旧的价值估算 (`Q(S, A)`) 之间的差距。
 
-## Core Idea and Update Process of SARSA (English)
+## Core Idea and Update Process of SARSA 
 
 The goal of SARSA is to learn an action-value function `Q(s, a)`, just like Q-learning. However, its update method differs. To update the value of a state-action pair `Q(s, a)`, SARSA requires a data tuple containing five elements: `(S, A, R, S', A')`.
 
