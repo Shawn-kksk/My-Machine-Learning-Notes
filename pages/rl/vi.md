@@ -4,7 +4,7 @@
 
 ## 核心思想与贝尔曼最优方程 (Core Idea & Bellman Optimality Equation)
 
- 价值迭代是一种用于在已知**马尔可夫决策过程 (MDP)** 模型的情况下，寻找最优价值函数 $V^*(s)$ 和最优策略 $\pi^*(s)$ 的算法 [cite: 12] 。其核心思想是通过不断迭代更新每个状态的价值，最终使其收敛到最优值 。
+ 价值迭代是一种用于在已知**马尔可夫决策过程 (MDP)** 模型的情况下，寻找最优价值函数 $V^*(s)$ 和最优策略 $\pi^*(s)$ 的算法 。其核心思想是通过不断迭代更新每个状态的价值，最终使其收敛到最优值 。
 
  Value Iteration is an algorithm used to find the optimal value function $V^*(s)$ and the optimal policy $\pi^*(s)$ when the model of the **Markov Decision Process (MDP)** is known.  Its core idea is to iteratively update the value of each state until it converges to the optimal value.
 
