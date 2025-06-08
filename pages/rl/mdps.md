@@ -21,9 +21,9 @@ An MDP is formally defined as a tuple $(S, A, P, R, \gamma)$:
 
 * **Policy ($\pi$)**: A function that specifies the action to be taken in each state. It can be deterministic, $\pi(s) = a$, or stochastic, $\pi(a|s) = \Pr(A_t=a | S_t=s)$.
 * **Return ($G_t$)**: The total discounted future reward from time step $t$: $G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \dots = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}$.
-* **State-Value Function ($v_{\pi}(s)$)**: The expected return starting from state $s$ and following policy $\pi$.
+* **State-Value Function $v_{\pi}(s)$**: The expected return starting from state $s$ and following policy $\pi$.
     $v_{\pi}(s) = \mathbb{E}_{\pi}[G_t | S_t=s]$.
-* **Action-Value Function ($q_{\pi}(s, a)$)**: The expected return starting from state $s$, taking action $a$, and then following policy $\pi$.
+* **Action-Value Function $q_{\pi}(s, a)$**: The expected return starting from state $s$, taking action $a$, and then following policy $\pi$.
     $q_{\pi}(s, a) = \mathbb{E}_{\pi}[G_t | S_t=s, A_t=a]$.
 
 ---
