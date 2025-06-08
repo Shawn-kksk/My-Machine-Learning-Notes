@@ -78,10 +78,10 @@ The Bellman equations are the foundation for many reinforcement learning algorit
 ### 核心概念
 
 * **策略 ($\pi$)**: 一个函数，指定在每个状态下要采取的动作。可以是确定性的 $\pi(s) = a$，也可以是随机的 $\pi(a|s) = \Pr(A_t=a | S_t=s)$。
-* **回报 ($G_t$)**: 从时间步 $t$ 开始的总折扣未来奖励：$G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \dots = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}$。
-* **状态值函数 ($v_{\pi}(s)$)**: 从状态 $s$ 开始，并遵循策略 $\pi$ 的预期回报。
+* **回报 ($G_t$)**: 从时间步 $t$ 开始的总折扣未来奖励：$t$: $G_t = R_{t+1} + \gamma R_{t+2} + \gamma^2 R_{t+3} + \dots = \sum_{k=0}^{\infty} \gamma^k R_{t+k+1}$.
+* **状态值函数 $v_{\pi}(s)$**: 从状态 $s$ 开始，并遵循策略 $\pi$ 的预期回报。
     $v_{\pi}(s) = \mathbb{E}_{\pi}[G_t | S_t=s]$。
-* **动作值函数 ($q_{\pi}(s, a)$)**: 从状态 $s$ 开始，采取动作 $a$，然后遵循策略 $\pi$ 的预期回报。
+* **动作值函数 $q_{\pi}(s, a)$**: 从状态 $s$ 开始，采取动作 $a$，然后遵循策略 $\pi$ 的预期回报。
     $q_{\pi}(s, a) = \mathbb{E}_{\pi}[G_t | S_t=s, A_t=a]$。
 
 ---
