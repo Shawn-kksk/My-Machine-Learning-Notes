@@ -37,9 +37,11 @@ The Bellman Equation decomposes the value function into two parts: the immediate
 The Bellman Expectation Equation relates the value of a state (or state-action pair) to the values of its successor states.
 
 For the state-value function $v_{\pi}(s)$:
+
 $$v_{\pi}(s) = \sum_{a \in A} \pi(a|s) \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma v_{\pi}(s')]$$
 
 For the action-value function $q_{\pi}(s, a)$:
+
 $$q_{\pi}(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \sum_{a' \in A} \pi(a'|s') q_{\pi}(s', a')]$$
 
 ### Bellman Optimality Equation
@@ -47,9 +49,11 @@ $$q_{\pi}(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \sum_{a' \in 
 The goal of an MDP is to find the optimal policy $\pi_*$ that maximizes the expected return. The Bellman Optimality Equation provides a condition that the optimal value functions must satisfy.
 
 The optimal state-value function $v_*(s)$ is:
+
 $$v_*(s) = \max_{a \in A} \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma v_*(s')]$$
 
 The optimal action-value function $q_*(s, a)$ is:
+
 $$q_*(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \max_{a' \in A} q_*(s', a')]$$
 
 The Bellman equations are the foundation for many reinforcement learning algorithms, such as Value Iteration and Policy Iteration, which are used to find optimal policies for MDPs.
@@ -95,9 +99,11 @@ The Bellman equations are the foundation for many reinforcement learning algorit
 贝尔曼期望方程将一个状态（或状态-动作对）的价值与其后继状态的价值联系起来。
 
 对于状态值函数 $v_{\pi}(s)$:
+
 $$v_{\pi}(s) = \sum_{a \in A} \pi(a|s) \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma v_{\pi}(s')]$$
 
 对于动作值函数 $q_{\pi}(s, a)$:
+
 $$q_{\pi}(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \sum_{a' \in A} \pi(a'|s') q_{\pi}(s', a')]$$
 
 ### 贝尔曼最优方程
@@ -105,9 +111,11 @@ $$q_{\pi}(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \sum_{a' \in 
 MDP 的目标是找到能够最大化预期回报的最优策略 $\pi_*$。贝尔曼最优方程为最优价值函数必须满足的条件。
 
 最优状态值函数 $v_*(s)$ 为：
+
 $$v_*(s) = \max_{a \in A} \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma v_*(s')]$$
 
 最优动作值函数 $q_*(s, a)$ 为：
+
 $$q_*(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \max_{a' \in A} q_*(s', a')]$$
 
 贝尔曼方程是许多强化学习算法的基础，例如价值迭代和策略迭代，这些算法用于为 MDP 找到最优策略。
