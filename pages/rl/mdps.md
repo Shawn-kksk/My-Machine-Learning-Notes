@@ -50,11 +50,11 @@ The goal of an MDP is to find the optimal policy $\pi_*$ that maximizes the expe
 
 The optimal state-value function $v_*(s)$ is:
 
-$$v_*(s) = \max_{a \in A} \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma v_*(s')]$$
+$v_*(s) = \max_{a \in A} \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma v_*(s')]$
 
 The optimal action-value function $q_*(s, a)$ is:
 
-$$q_*(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \max_{a' \in A} q_*(s', a')]$$
+$q_*(s, a) = \sum_{s' \in S} P(s'|s, a) [R(s, a, s') + \gamma \max_{a' \in A} q_*(s', a')]$
 
 The Bellman equations are the foundation for many reinforcement learning algorithms, such as Value Iteration and Policy Iteration, which are used to find optimal policies for MDPs.
 
