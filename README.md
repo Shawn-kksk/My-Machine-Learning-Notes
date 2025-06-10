@@ -12,3 +12,6 @@
 5. [Policy Iteration | 策略迭代](pages/rl/pi.md)
 6. [Policy Gradient Methods | 策略梯度方法](pages/rl/pgm.md)
 7. [Game Theory | 博弈论](pages/rl/gt.md)
+
+## Traditional Search Algorithms | 传统搜索算法
+1. [A-Star](pages/ts/astar.md)
