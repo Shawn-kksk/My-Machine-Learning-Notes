@@ -15,3 +15,4 @@
 
 ## Traditional Search Algorithms | 传统搜索算法
 1. [A-Star](pages/ts/astar.md)
+2. [Greedy Best-First Search](pages/ts/gbfs.md)
