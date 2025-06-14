@@ -13,5 +13,9 @@
 6. [Policy Gradient Methods | 策略梯度方法](pages/rl/pgm.md)
 7. [Game Theory | 博弈论](pages/rl/gt.md)
 
+## Ensemble Learning | 集成学习
+1. [Random Forest | 随机森林](pages/el/rf.md)
+
+
 ## Something interesting
 1. [Iterated Width | 宽度迭代](pages/interesting/iw.md)
