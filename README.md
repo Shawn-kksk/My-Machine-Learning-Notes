@@ -15,6 +15,7 @@
 
 ## Ensemble Learning | 集成学习
 1. [Random Forest | 随机森林](pages/el/rf.md)
+2. [Gradient Boosting | 梯度提升](pages/el/gb.md)
 
 
 ## Something interesting
