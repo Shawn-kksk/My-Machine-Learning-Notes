@@ -17,6 +17,8 @@
 1. [Random Forest | 随机森林](pages/el/rf.md)
 2. [Gradient Boosting | 梯度提升](pages/el/gb.md)
 
+## Nature Language Processing | 自然语言处理
+1. [Word2Vec](pages/nlp/w2v.md)
 
 ## Something interesting
 1. [Iterated Width | 宽度迭代](pages/interesting/iw.md)
